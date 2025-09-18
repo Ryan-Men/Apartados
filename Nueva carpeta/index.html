@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartados</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Apartados</h1>
+  </header>
+
+  <div class="controls">
+    <button id="importBtn">Importar Excel</button>
+    <input type="file" id="fileInput" style="display:none" accept=".xlsx,.xls,.json">
+    <button id="addRowBtn">Añadir Apartado</button>
+    <button id="exportBtn">Exportar Excel</button>
+    <input type="text" id="searchInput" placeholder="Buscar...">
+  </div>
+
+  <div id="tableContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
